@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: #ffe4e1;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-family: 'Dancing Script', cursive;
+      margin-bottom: 1rem;
+      color: #c71585;
+    }
+    .slideshow {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-padding: 1rem;
+    }
+    .slideshow img {
+      width: 300px;
+      height: auto;
+      border-radius: 1rem;
+      scroll-snap-align: start;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .slideshow img:hover {
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: #c71585;
+    }
+    .letter {
+      background: #fff;
+      padding: 2rem;
+      margin: auto;
+      max-width: 700px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-style: italic;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+      text-align: left;
+      padding: 1rem;
+    }
+    .grid div {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .selfie {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .selfie img {
+      max-width: 180px;
+      border-radius: 50%;
+      border: 5px solid #ffb6c1;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .selfie h3 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5rem;
+      color: #ff69b4;
+      margin-top: 1rem;
+    }
+    footer {
+      padding: 2rem;
+      background: #fffaf0;
+      text-align: center;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>This entire website is a love letter from the biggest idiot in the universe—who somehow got lucky enough to meet you and even luckier to still have a chance to fix things 💌</h1>
+  </header>
+
+  <!-- Slideshow -->
+  <section class="slideshow">
+    <img src="IMG-20250204-WA0051.jpg" alt="Her 1">
+    <img src="IMG-20250410-WA0067.jpg" alt="Her 2">
+    <img src="IMG-20250505-WA0032.jpg" alt="Her 3">
+    <img src="IMG-20250524-WA0185.jpg" alt="Her 4">
+    <img src="IMG-20250524-WA0186.jpg" alt="Her 5">
+    <img src="IMG-20250524-WA0187.jpg" alt="Her 6">
+    <img src="IMG-20250524-WA0188.jpg" alt="Her 7">
+    <img src="IMG-20250524-WA0190.jpg" alt="Her 8">
+    <img src="IMG-20250524-WA0192.jpg" alt="Her 9">
+    <img src="IMG-20250524-WA0193.jpg" alt="Her 10">
+    <img src="IMG-20250524-WA0194.jpg" alt="Her 11">
+    <img src="IMG-20250524-WA0195.jpg" alt="Her 12">
+    <img src="IMG-20250524-WA0196.jpg" alt="Her 13">
+  </section>
+
+  <!-- Love Letter -->
+  <section class="section">
+    <h2>Love Letter</h2>
+    <div class="letter">
+      <p>Dear Love<br><br>
+      I know I've hurt you and for that I'm deeply sorry You are the light in my life the smile that keeps me going and the heart I never want to stop beating for Every photo here is a memory I treasure Every word is a hope to fix what I've broken You deserve the world and I want to spend the rest of my life giving it to you—starting with this small gesture of love<br><br>
+      Forever yours<br>
+      The Idiot Who Loves You 💗</p>
+    </div>
+  </section>
+
+  <!-- 100 Compliments -->
+  <section class="section">
+    <h2>100 Compliments to the Most Beautiful Soul</h2>
+    <div class="grid">
+      <!-- Compliments list remains the same -->
+    </div>
+  </section>
+
+  <!-- Selfie & Subtitle -->
+  <section class="selfie">
+    <img src="WhatsApp Image 2025-05-24 at 14.34.52_c945e461.jpg" alt="Me">
+    <h3>The human version of a typo but hopelessly in love with you To the moon and back</h3>
+  </section>
+
+  <!-- 100 Roasts -->
+  <section class="section">
+    <h2>Roasts of the Dummy Who Hurt You</h2>
+    <div class="grid">
+      <script>
+        const roasts = Array.from({ length: 100 }, (_, i) => `Roast #${i + 1} I did something dumb again`);
+        const container = document.currentScript.parentElement;
+        roasts.forEach(r => {
+          const div = document.createElement('div');
+          div.textContent = r;
+          container.appendChild(div);
+        });
+      </script>
+    </div>
+  </section>
+
+  <!-- 20 Funny Self-Roasts -->
+  <section class="section">
+    <h2>20 Brutal Roasts for Myself</h2>
+    <div class="grid">
+      <script>
+        const selfRoasts = [
+          "If brains were currency I'd still be in eternal debt",
+          "I'm the reason autocorrect gave up",
+          "I make bad decisions look like an art form",
+          "If clumsiness was a sport I'd have a gold medal",
+          "I once lost a staring contest to a wall",
+          "I peak at mediocrity",
+          "Even Google can't help me sometimes",
+          "I could trip over a wireless signal",
+          "I once apologized to a mannequin",
+          "I bring confusion wherever I go",
+          "My spirit animal is a broken GPS",
+          "I once tried to screenshot a video call with the camera",
+          "My common sense is on permanent vacation",
+          "I’m the human version of a software bug",
+          "I’ve made better choices in dreams than real life",
+          "I'm the guy who brings a spoon to a pizza party",
+          "Even my reflection shakes its head at me",
+          "I once waved at someone who wasn’t waving at me",
+          "I’m a living reminder that evolution is a slow process",
+          "If I were a vegetable I'd be a caboombozo"
+        ];
+        const roastContainer = document.currentScript.parentElement;
+        selfRoasts.forEach(r => {
+          const div = document.createElement('div');
+          div.textContent = r;
+          roastContainer.appendChild(div);
+        });
+      </script>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with all my love and a ton of regret 💔❤️</p>
+  </footer>
+</body>
+</html>
